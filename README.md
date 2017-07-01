@@ -193,3 +193,21 @@ O uso de HTML válido é um atributo de qualidade e uma base mensurável que con
 	</section>
 </body>
 ```
+
+### 3.1.3. Semântica
+
+Usar HTML de acordo com seu propósito.
+
+Usar elementos/tags seguindo a especificação para a qual foram criados. Por exemplo, usar elementos de cabeçalho para cabeçalhos, ```p``` para parágrafos e ```a``` para âncoras, etc.
+
+Usando HTML de acordo com seu propósito é importante para acessibilidade, reuso e eficiência de código.
+
+```html
+<!-- Não recomendado -->
+<div onclick="goToRecommendations();">Todas as recomendações</div>
+```
+
+```html
+<!-- Recomendado -->
+<a href="recommendations/">Todas as recomendações</a>
+```
