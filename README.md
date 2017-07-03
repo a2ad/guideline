@@ -211,3 +211,25 @@ Usando HTML de acordo com seu propósito é importante para acessibilidade, reus
 <!-- Recomendado -->
 <a href="recommendations/">Todas as recomendações</a>
 ```
+
+### 3.1.4. Multimedia Fallback
+
+Fornecer conteúdos alternativos para multimídia.
+
+Para conteúdos multimídia, como imagens, vídeos, objetos animados com canvas, certificar-se de oferecer alternativas de acesso. Para imagens isso significa usar *alternative text* ```(alt)``` e para vídeos, transcrição de áudios e legendas, caso disponível.
+
+Prover conteúdos alternativo é importante por questões de acessibilidade: um usuário cego possui poucas chances de saber sobre o que é uma imagem sem o atríbuto ```alt```, e outros usuários podem não ter como entender conteúdos de vídeos e áudio caso não exista um fallback.
+
+(Para imagens cujo atributo ```alt``` possa apresentar redundância ou imagens cujo propósito seja puramente decorativo, não usar texto alternativo, como ```alt=""```)
+
+```html
+<!-- Não recomendado -->
+<img src="spreadsheet.png">
+```
+
+```html
+<!-- Recomendado -->
+<img src="spreadsheet.png" alt="Screenshot da planilha de orçamento">
+```
+
+### 3.1.5. Separação de interesse/preocupação (*Separation of Concerns*)
