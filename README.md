@@ -233,3 +233,73 @@ Prover conteúdos alternativo é importante por questões de acessibilidade: um 
 ```
 
 ### 3.1.5. Separação de interesse/preocupação (*Separation of Concerns*)
+
+Separar estrutura(HTML) da apresentação(CSS) e do comportamento(JavaScript).
+
+Manter estritamente estrutura (marcação), apresentação (estilo) e comportamento (script) separados e buscar manter a interação entre os três o mínimo possível.
+
+Isto é, certificar-se que documentos e templates contenham apenas HTML e HTML que sirva solenimente para propósito estrutural. Mover tudo que diz respeito a apresentação em folhas de estilos e tudo que é comportamental em scripts. 
+
+Separar estrutura da apresentação e do comportamento é importante por questões de manutenibilidade.
+
+```html
+<!-- Não recomendado -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML sucks</title>
+	<link rel="stylesheet" href="base.css" media="screen">
+	<link rel="stylesheet" href="grid.css" media="screen">
+	<link rel="stylesheet" href="print.css" media="print">
+</head>
+<body>
+	<h1 style="font-size: 1em;">HTML sucks</h1>
+	<p>I’ve read about this on a few sites but now I’m sure:</p>
+  <u>HTML is stupid!!1</u>
+<center>I can’t believe there’s no way to control the styling of my website without doing everything all over again!</center>
+<body>
+</html>
+```
+
+```html
+<!-- Recomendado -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My first CSS-only redesign</title>
+	<link rel="stylesheet" href="default.css">
+</head>
+<h1>My first CSS-only redesign</h1>
+<p>I’ve read about this on a few sites but today I’m actually doing it: separating concerns and avoiding anything in the HTML of my website that is presentational.</p>
+<p>It’s awesome!</p>
+```
+
+### 3.1.6. Atributos *type*
+
+Não omitir atríbutos *type* para estilos e scripts.
+
+O HTML5 assume o uso de ```text/css``` e ```text/javascript``` como padrão, portanto, seu uso não é mais necessário. Porém, para garantir e previsar incompatibilidades com browsers antigos, sempre usar o atríbuto.
+
+```html
+<!-- Não recomendado -->
+<link rel="stylesheet" href="https://www.google.com/css/maia.css">
+```
+
+```html
+<!-- Recomendado -->
+<link rel="stylesheet" href="https://www.google.com/css/maia.css" type="text/css">
+```
+
+```html
+<!-- Não recomendado -->
+<script src="https://www.google.com/js/gweb/analytics/autotrack.js"></script>
+```
+
+```html
+<!-- Not recommended -->
+<script src="https://www.google.com/js/gweb/analytics/autotrack.js" type="text/javascript"></script>
+```
+
+### 3.2. Regras de formação HTML
+
+### 3.2.1. Regras gerais de formatação
