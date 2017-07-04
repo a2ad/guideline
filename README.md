@@ -303,3 +303,68 @@ O HTML5 assume o uso de ```text/css``` e ```text/javascript``` como padrão, por
 ### 3.2. Regras de formação HTML
 
 ### 3.2.1. Regras gerais de formatação
+
+Usar uma nova linha para cada bloco, lista ou elemento de tabela, e indentar cada elemento filho.
+
+Independentemente do estilo do elemento (como CSS permite que elementos assumam diferentes estilos com a propriedade ```display```), colocar todos os blocos, listas e elementos de tabela em uma nova linha.
+
+Além disso, indentar os elementos caso eles sejam filhos de um elemento de bloco, lista ou tabela.
+
+```html
+<blockquote>
+  <p><em>Space</em>, the final frontier.</p>
+</blockquote>
+```
+
+```html
+<ul>
+  <li>Moe
+  <li>Larry
+  <li>Curly
+</ul>
+```
+
+```html
+<table>
+  <thead>
+    <tr>
+      <th scope="col">Income
+      <th scope="col">Taxes
+  <tbody>
+    <tr>
+      <td>$ 5.00
+      <td>$ 4.50
+</table>
+```
+
+### 3.2.2. Uso de aspas no HTML
+
+Quando adicionar citações em valores de atributos, usar aspas duplas. 
+
+Usar aspas duplas (```""```) em vez de apas simples (```''```) em valores de atributos.
+
+```html
+<!-- Não reomendado -->
+<a class='btn btn-secondary'>Sign in</a>
+```
+
+```html
+<!-- Recomendado -->
+<a class="btn btn-secondary">Sign in</a>
+```
+
+## 4. CSS
+
+### 4.1. Regras de estilo CSS
+
+### 4.1.1. Validação de CSS
+
+Usar CSS válido sempre que possível.
+
+A menos que esteja lidando com bugs do validador de CSS ou sintaxe proprietárias, usar código CSS válido.
+
+Usar ferramentas como o [W3C CSS validator](https://jigsaw.w3.org/css-validator/) para testes.
+
+O uso de CSS válido é uma mensurável de qualidade que permite detectar código CSS que não esteja sendo usado e que pode ser removido, o que garante o seu uso correto. 
+
+### 4.1.2. Nome de classes e IDs
