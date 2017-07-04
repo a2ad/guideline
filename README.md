@@ -368,3 +368,73 @@ Usar ferramentas como o [W3C CSS validator](https://jigsaw.w3.org/css-validator/
 O uso de CSS válido é uma mensurável de qualidade que permite detectar código CSS que não esteja sendo usado e que pode ser removido, o que garante o seu uso correto. 
 
 ### 4.1.2. Nome de classes e IDs
+
+Usar nomes significativos para classes e IDs.
+
+Usar sempre nomes que refletem a finalidade do elemento em questão, ou que sejam genéricos.
+
+Nomes que são específicos e que refletem a finalidade do elemento devem ser preferidos, pois estes são mais compreensíveis e menos propensos a mudar.
+
+Nomes genéricos são simplesmente um fallback para elementos que não têm nenhum significado particular. Eles são geralmente necessários como "ajudantes".
+
+O uso de nomes funcionais ou genéricos reduz a probabilidade de documentos desnecessários e mudanças de templates.
+
+```css
+/* Não recomendado: sem significado */
+#yee-1901 {}
+
+/* Não recomendado: apresentação */
+.button-green {}
+.clear {}
+```
+
+```css
+/* Recomendado: específico */
+#gallery {}
+#login {}
+.video {}
+
+/* Recomendado: genérico */
+.aux {}
+.alt {}
+```
+
+### 4.1.3. Estilo de nome de classes e IDs
+
+Usar nomes para classes e id's que sejam o mais curtos possível e tão longos quanto necessário.
+
+Tentar transmitir o que é a classe ou id, sendo tão breve quanto possível.
+
+O uso de classes e id's dessa forma contribui para níveis aceitáveis de compreensão e eficiência de código.
+
+```css
+/* Não recomendado */
+#navigation {}
+.atr {}
+```
+
+```css
+/* Recomendado */
+#nav {}
+.author {}
+```
+
+### 4.1.4. Seletores de tipo (*Type Selectors*)
+
+Evitar qualificar id's e classes com seletores de tipos.
+
+A menos que seja necessário (por exemplo, com classes helpers), não usar nomes de elementos em conjunto com id's e classes.
+
+Evitar seletores antecessores desnecessários é útil por [motivos de desempenho](http://www.stevesouders.com/blog/2009/06/18/simplifying-css-selectors/).
+
+```css
+/* Não recomendado */
+ul#example {}
+div.error {}
+```
+
+```css
+/* Recomendado */
+#example {}
+.error {}
+```
