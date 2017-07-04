@@ -300,7 +300,7 @@ O HTML5 assume o uso de ```text/css``` e ```text/javascript``` como padrão, por
 <script src="https://www.google.com/js/gweb/analytics/autotrack.js" type="text/javascript"></script>
 ```
 
-### 3.2. Regras de formação HTML
+### 3.2. Regras de formatação HTML
 
 ### 3.2.1. Regras gerais de formatação
 
