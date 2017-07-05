@@ -438,3 +438,57 @@ div.error {}
 #example {}
 .error {}
 ```
+
+### 4.1.5. Propriedades shorthand
+
+Evitar usar propriedades *shorthand*.
+
+O CSS oferece uma variedade de propriedades *shorthand* (como ```font```) que podem ser usados. Porém, evitá-los é útil para aumentar a compreensão de todas as partes do código.
+
+```css
+/* Não recomendado */
+border-top-style: none;
+font-family: palatino, georgia, serif;
+font-size: 100%;
+line-height: 1.6;
+padding-bottom: 2em;
+padding-left: 1em;
+padding-right: 1em;
+padding-top: 0;
+```
+
+```css
+/* Recomendado */
+border-top: 0;
+font: 100%/1.6 palatino, georgia, serif;
+padding: 0 1em 2em;
+```
+
+### 4.1.6. 0 e unidades
+
+Omitir especificação de unidade após valores "0", a menos que seja requerido.
+
+Não usar unidades após valores ```0``` a menos que seja obrigatório.
+
+```css
+flex: 0px; /* This flex-basis component requires a unit. */
+flex: 1 1 0px; /* Not ambiguous without the unit, but needed in IE11. */
+margin: 0;
+padding: 0;
+```
+
+### 4.1.8. Notação Hexadecimal
+
+Usar 3 caracteres da notação hexadecimais onde possível. 
+
+Para valores de cores que permitem isso, 3 caracteres é curto e mais suscinto.
+
+```css
+/* Não recomendado */
+color: #eebbcc;
+```
+
+```css
+/* Recomendado */
+color: #ebc;
+```
