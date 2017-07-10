@@ -492,3 +492,23 @@ color: #eebbcc;
 /* Recomendado */
 color: #ebc;
 ```
+
+### 4.1.9. Delimitadores de nomes de classes e id's
+
+Separar palavras por um hífen em nome de ID's ou classes.
+
+```css
+/* Não recomendado: não separa as palavas “demo” e “image” */
+.demoimage {}
+
+/* Não recomendado: usa underline no lugar de hífen*/
+.error_status {}
+```
+
+```css
+/* Recomendado */
+#video-id {}
+.news-itens{}
+```
+
+### 4.1.10. *Hacks*
