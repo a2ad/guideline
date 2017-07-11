@@ -512,3 +512,151 @@ Separar palavras por um hífen em nome de ID's ou classes.
 ```
 
 ### 4.1.10. *Hacks*
+
+Evite o uso de meios de detecção do agente do usuário, bem como a utilização de *Hacks* CSS - tente uma abordagem diferente antes.
+
+Ambas as abordagens devem ser consideradas em último recurso para alcançar e manter uma base de código eficiente e gerenciável. Usar detecção e hacks, é uma poderá prejudicar projetos a longo prazo
+
+### 4.2. Regras de formatação CSS
+
+### 4.2.1. Ordem de declaração
+
+Declarações em orderm alfabética.
+
+Colocar as declarações em ordem alfabética para conseguir um código consistente e de forma fácil de lembrar e manter.
+
+Ignorar os prefixos específicos para fins de ordenação. Porém, vários prefix para uma determinada propriedade CSS devem ser mantidos ordenadamente na order alfabética (exemplo: -moz vem antes de -webkit).
+
+```css
+background: fuchsia;
+border: 1px solid;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+border-radius: 4px;
+color: black;
+text-align: center;
+text-indent: 2em;
+```
+
+### 4.2.2. Indentação de conteúdos de bloco
+
+Indentar todos os conteúdos de bloco, isto é, regras dentro das regras, bem como declarações, para refletir a hierarquia e melhorar a compreensão.
+
+```css
+@media screen {
+
+  html {
+    background: #fff;
+    color: #444;
+  }
+
+}
+```
+
+### 4.2.3. Fim de declarações
+
+Usar ponto e vírgula após cada declaração.
+
+Terminar cada declaração com um ponto e vírgula por motivos de consistência e extensibilidade.
+
+```css
+* Não recomendado */
+.test {
+  display: block;
+  height: 100px
+}
+```
+
+```css
+/* Recomendado */
+.test {
+  display: block;
+  height: 100px;
+}
+```
+
+### 4.2.4. Fim de nome de propriedades
+
+Usar um espaço após os dois pontos que procede o nome de uma propriedade.
+
+Sempre usar um única espaço entre a própriedade e seu valor (mas não espaço entre a propriedade e os dois pontos) por motivos de consistência.
+
+```css
+/* Não recomendado */
+h3 {
+  font-weight:bold;
+}
+```
+
+```css
+/* Recomendado */
+h3 {
+  font-weight: bold;
+}
+```
+
+### 4.2.5. Separação do bloco de declaração
+
+Usar um espaço entre os último seletor e o bloco de declaração.
+
+Sempre usar um único espaço entre o último seletor e a chave de abertura do bloco de declaração.
+
+```css
+/* Não recomendado: espaço faltando */
+.video{
+  margin-top: 1em;
+}
+
+/* Não recomendado: Quebra de linha desnecessária */
+.video
+{
+  margin-top: 1em;
+}
+``` 
+
+```css
+/* Recomendado */
+.video {
+  margin-top: 1em;
+}
+```
+
+### 4.2.6. Seletor e separação da declaração
+
+Separar seletores e declarações por uma nova linha.
+
+Sempre começar uma nova linha para seletores e declarações.
+
+```css
+/* Não recomendado */
+a:focus, a:active {
+  position: relative; top: 1px;
+}
+```
+
+```css
+/* Recomendado */
+h1,
+h2,
+h3 {
+  font-weight: normal;
+  line-height: 1.2;
+}
+```
+
+### 4.2.7. Separação de regras
+
+Separar regras de declaração por uma nova linha.
+
+Sempre colocar uma linha em branco (duas quebras de linhas) entre regras de declaração.
+
+```css
+html {
+  background: #fff;
+}
+
+body {
+  margin: auto;
+  width: 50%;
+}
+```
