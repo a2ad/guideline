@@ -11,11 +11,102 @@
 
 Este documento define a formatação e regras de estilo para HTML e CSS. Seu objetivo é melhorar a colaboração, qualidade de código, manutenção e transparência no processo de desenvolvimento.
 
-## 2. Geral
+## 2. Git
 
-### 2.1. Regras gerais de estilo 
+### 2.1. .gitignore
 
-### 2.1.1. Protocolo
+Usar este arquivo [.gitignore](https://github.com/a2ad/guideline/blob/master/.gitignore).
+
+Caso esteja desenvolvendo algum projeto que não utilize o [Snack](https://github.com/snack/snack-wp), adicionar este arquivo .gitignore na raiz do projeto. Ele já possui uma lista de arquivos do sistema que não devem ser enviados com o seu código para o repositório remoto. 
+
+Além disso, exclui a configuração de pastas e arquivos para editores mais utilizados, bem como as pastas de dependência mais comuns.
+
+### 2.1.2. Branch
+
+Trabalhamos com dois branchs: ```master``` e ```develop```.
+
+Ao iniciar o desenvolvimento em um projeto, sempre fazer checkout para a branch ```develop```. 
+
+```git checkout develop```
+
+Caso a branch ainda não exista, ela deverá ser criada. 
+
+Nunca comitar na branch ```master```.
+
+### 2.1.3. Commit
+
+Sempre fazer a sincronização com o repositório remoto antes de realizar um novo commit. Isso evita potenciais conflitos de versão.
+
+```git pull```
+
+Todos os commits devem ser escritos em português e devem descrever exatamente do que se trata a alteração. Caso as alterações envolva mais de uma feature/bug, separar por ponto e vígula as diferentes alterações.
+
+```git commit -m "Adiciona galeria de imagens na homepage"```
+
+```git commit -m "Corrige bug que fazia o formulário de busca no menu principal não abrir; Ajustes de CSS no box de notícias lateral"```
+
+**De preferência sempre fazer um commit por feature/bug.**
+
+Mais sobre escrever bons commits em: [How to Write a Git Commit Message](https://chris.beams.io/posts/git-commit/#seven-rules).
+
+## 3. Documentações
+
+Toda a documentação de projetos e configurações ficam hospedados na Wiki da A2ad. Em caso de dúvidas, entrar em contato com algum responsável dentro da equipe de Design e Tecnologia. 
+
+## 4. Dependências
+
+Dar preferência ao usar do [Yarn](https://yarnpkg.com/pt-BR/) (uma versão otimizada do [npm](https://www.npmjs.com/)) como gerenciador de dependências.
+
+Antes de usar um pacote de dependência, verifique o seu GitHub. Procure o número de issues abertos, downloads diários e número de contribuidores, bem como a data em que o pacote foi atualizado pela última vez.
+
+* Se for necessária uma dependência menos conhecida, discuta com a equipe antes de usá-la.
+* Acompanhe os pacotes atualmente disponíveis e mantenha-os atualizados.
+* Veja se algum dos seus pacotes se tornou inutilizado ou irrelevante.
+	* É um risco potencial importar bibliotecas não utilizadas ou depreciadas e enviá-las para produção.
+* Verifique as estatísticas de download para ver se a dependência é muito usada pela comunidade.
+	* Mais uso significa principalmente mais contribuidores, o que geralmente significa melhor manutenção, o que resulta em bugs sendo descobertos e corrigidos de maneira mais rápida.
+* Certifique-se sempre de que a aplicação funciona com as últimas versões de dependências sem quebrar.
+* Verifique se o pacote possui vulnerabilidades de segurança conhecidas.
+
+### 4.1. Consistência de dependências
+
+Certifique-se de que os membros da sua equipe tenha exatamente as mesmas dependências que você.
+
+* O código deve se comportar como esperado e idêntico em qualquer máquina de desenvolvimento.
+
+## 5. Estrutura de pastas
+
+Se possível, utilizar a seguinte estrutura de organização de pastas:
+
+```
+.
+├── assets
+    ├── img
+    ├── js
+    └── scss
+		├── 1.settings
+	   	├── 2.tools
+		├── 3.generic
+	 	├── 4.base
+	   	├── 5.objects
+		├── 6.plugins
+		├── 7.components
+	   	├── 8.helpers
+		├── 9.templates
+		└── main.scss 
+├── build
+    ├── img
+    ├── js
+    └── css
+		├── main.css
+		└── main.min.css 
+```
+
+## 6. Geral
+
+### 6.1. Regras gerais de estilo 
+
+### 6.1.1. Protocolo
 
 Usar sempre que possível o protocolo HTTPS para recursos incorporados.
 Sempre usar o protocolo HTTPS (```https:```) para imagens e outros arquivos de mídia, folhas de estilo, fontes externas, apis e scripts, a menos que os respectivos arquivos não estejam disponíveis em HTTPS.
@@ -46,9 +137,9 @@ Sempre usar o protocolo HTTPS (```https:```) para imagens e outros arquivos de m
 @import 'https://fonts.googleapis.com/css?family=Open+Sans';
 ```
 
-### 2.2. Regras gerais de formatação
+### 6.2. Regras gerais de formatação
 
-### 2.2.1. Indentação
+### 6.2.1. Indentação
 
 Indentar utilizando tab uma única vez. 
 
@@ -67,7 +158,7 @@ Não usar espaços ou outros tipos de espaçamentos para indentação.
 }
 ```
 
-### 2.2.2. Capitalização
+### 6.2.2. Capitalização
 
 Usar apenas lowercase. 
 
@@ -93,7 +184,7 @@ color: #E5E5E5;
 color: #e5e5e5;
 ```
 
-### 2.2.3. Espaço em branco à direita
+### 6.2.3. Espaço em branco à direita
 
 Remover espaços em branco à direita.
 
@@ -109,9 +200,9 @@ Espaços em branco à direita são desnecessários e podem complicar diffs.
 <p>Okay!</p>
 ```
 
-### 2.3. Regras gerais de Meta Dados
+### 6.3. Regras gerais de Meta Dados
 
-### 2.3.1. Encoding
+### 6.3.1. Encoding
 
 Usar UTF-8.
 
@@ -121,7 +212,7 @@ Especifique o encoding nos templates HTML e documentos via ```<meta charset="utf
 
 Mais sobre encoding e quando e como especificar eles pode ser encontrado [aqui](https://www.w3.org/International/tutorials/tutorial-char-enc/).
 
-### 2.3.2. Comentários
+### 6.3.2. Comentários
 
 Explique o código conforme necessário e sempre que possível. 
 
@@ -129,7 +220,7 @@ Use comentários para explicar o código. O que ele faz? Para o que serve? Por q
 
 Ser objetivo nos comentários e não pecar por falta de explicação.
 
-### 2.3.3. Itens de ação
+### 6.3.3. Itens de ação
 
 Marcar *todos* e itens de ação com ```TODO```.
 
@@ -146,11 +237,11 @@ if(logica) {
 }
 ```
 
-## 3. HTML
+## 7. HTML
 
-### 3.1. Regras de estilo HTML
+### 7.1. Regras de estilo HTML
 
-### 3.1.1. Tipo de documento
+### 7.1.1. Tipo de documento
 
 Usar HTML5.
 
@@ -169,7 +260,7 @@ Embora compatível com o HTML, não fechar elementos vazios.
 <br>
 ```
 
-### 3.1.2. Validação de HTML
+### 7.1.2. Validação de HTML
 
 Usar HTML válidos sempre que possível.
 
@@ -199,7 +290,7 @@ O uso de HTML válido é um atributo de qualidade e uma base mensurável que con
 </body>
 ```
 
-### 3.1.3. Semântica
+### 7.1.3. Semântica
 
 Usar HTML de acordo com seu propósito.
 
@@ -217,7 +308,7 @@ Usando HTML de acordo com seu propósito é importante para acessibilidade, reus
 <a href="recommendations/">Todas as recomendações</a>
 ```
 
-### 3.1.4. Multimedia Fallback
+### 7.1.4. Multimedia Fallback
 
 Fornecer conteúdos alternativos para multimídia.
 
@@ -237,7 +328,7 @@ Prover conteúdos alternativo é importante por questões de acessibilidade: um 
 <img src="spreadsheet.png" alt="Screenshot da planilha de orçamento">
 ```
 
-### 3.1.5. Separação de interesse/preocupação (*Separation of Concerns*)
+### 7.1.5. Separação de interesse/preocupação (*Separation of Concerns*)
 
 Separar estrutura(HTML) da apresentação(CSS) e do comportamento(JavaScript).
 
@@ -279,7 +370,7 @@ Separar estrutura da apresentação e do comportamento é importante por questõ
 <p>It’s awesome!</p>
 ```
 
-### 3.1.6. Atributos *type*
+### 7.1.6. Atributos *type*
 
 Não omitir atríbutos *type* para estilos e scripts.
 
@@ -305,9 +396,9 @@ O HTML5 assume o uso de ```text/css``` e ```text/javascript``` como padrão, por
 <script src="https://www.google.com/js/gweb/analytics/autotrack.js" type="text/javascript"></script>
 ```
 
-### 3.2. Regras de formatação HTML
+### 7.2. Regras de formatação HTML
 
-### 3.2.1. Regras gerais de formatação
+### 7.2.1. Regras gerais de formatação
 
 Usar uma nova linha para cada bloco, lista ou elemento de tabela, e indentar cada elemento filho.
 
@@ -342,7 +433,7 @@ Além disso, indentar os elementos caso eles sejam filhos de um elemento de bloc
 </table>
 ```
 
-### 3.2.2. Uso de aspas no HTML
+### 7.2.2. Uso de aspas no HTML
 
 Quando adicionar citações em valores de atributos, usar aspas duplas. 
 
@@ -358,11 +449,11 @@ Usar aspas duplas (```""```) em vez de apas simples (```''```) em valores de atr
 <a class="btn btn-secondary">Sign in</a>
 ```
 
-## 4. CSS
+## 8. CSS
 
-### 4.1. Regras de estilo CSS
+### 8.1. Regras de estilo CSS
 
-### 4.1.1. Validação de CSS
+### 8.1.1. Validação de CSS
 
 Usar CSS válido sempre que possível.
 
@@ -372,7 +463,7 @@ Usar ferramentas como o [W3C CSS validator](https://jigsaw.w3.org/css-validator/
 
 O uso de CSS válido é uma mensurável de qualidade que permite detectar código CSS que não esteja sendo usado e que pode ser removido, o que garante o seu uso correto. 
 
-### 4.1.2. Nome de classes e IDs
+### 8.1.2. Nome de classes e IDs
 
 Usar nomes significativos para classes e IDs.
 
@@ -404,7 +495,7 @@ O uso de nomes funcionais ou genéricos reduz a probabilidade de documentos desn
 .alt {}
 ```
 
-### 4.1.3. Estilo de nome de classes e IDs
+### 8.1.3. Estilo de nome de classes e IDs
 
 Usar nomes para classes e id's que sejam o mais curtos possível e tão longos quanto necessário.
 
@@ -424,7 +515,7 @@ O uso de classes e id's dessa forma contribui para níveis aceitáveis de compre
 .author {}
 ```
 
-### 4.1.4. Seletores de tipo (*Type Selectors*)
+### 8.1.4. Seletores de tipo (*Type Selectors*)
 
 Evitar qualificar id's e classes com seletores de tipos.
 
@@ -444,7 +535,7 @@ div.error {}
 .error {}
 ```
 
-### 4.1.5. Propriedades shorthand
+### 8.1.5. Propriedades shorthand
 
 Evitar usar propriedades *shorthand*.
 
@@ -469,7 +560,7 @@ font: 100%/1.6 palatino, georgia, serif;
 padding: 0 1em 2em;
 ```
 
-### 4.1.6. 0 e unidades
+### 8.1.6. 0 e unidades
 
 Omitir especificação de unidade após valores "0", a menos que seja requerido.
 
@@ -482,7 +573,7 @@ margin: 0;
 padding: 0;
 ```
 
-### 4.1.8. Notação Hexadecimal
+### 8.1.7. Notação Hexadecimal
 
 Usar 3 caracteres da notação hexadecimais onde possível. 
 
@@ -498,7 +589,7 @@ color: #eebbcc;
 color: #ebc;
 ```
 
-### 4.1.9. Delimitadores de nomes de classes e id's
+### 8.1.8. Delimitadores de nomes de classes e id's
 
 Separar palavras por um hífen em nome de ID's ou classes.
 
@@ -516,15 +607,15 @@ Separar palavras por um hífen em nome de ID's ou classes.
 .news-itens{}
 ```
 
-### 4.1.10. *Hacks*
+### 8.1.9. *Hacks*
 
 Evite o uso de meios de detecção do agente do usuário, bem como a utilização de *Hacks* CSS - tente uma abordagem diferente antes.
 
 Ambas as abordagens devem ser consideradas em último recurso para alcançar e manter uma base de código eficiente e gerenciável. Usar detecção e hacks, é uma poderá prejudicar projetos a longo prazo
 
-### 4.2. Regras de formatação CSS
+### 8.2. Regras de formatação CSS
 
-### 4.2.1. Ordem de declaração
+### 8.2.1. Ordem de declaração
 
 Declarações em orderm alfabética.
 
@@ -543,7 +634,7 @@ text-align: center;
 text-indent: 2em;
 ```
 
-### 4.2.2. Indentação de conteúdos de bloco
+### 8.2.2. Indentação de conteúdos de bloco
 
 Indentar todos os conteúdos de bloco, isto é, regras dentro das regras, bem como declarações, para refletir a hierarquia e melhorar a compreensão.
 
@@ -558,7 +649,7 @@ Indentar todos os conteúdos de bloco, isto é, regras dentro das regras, bem co
 }
 ```
 
-### 4.2.3. Fim de declarações
+### 8.2.3. Fim de declarações
 
 Usar ponto e vírgula após cada declaração.
 
@@ -580,7 +671,7 @@ Terminar cada declaração com um ponto e vírgula por motivos de consistência 
 }
 ```
 
-### 4.2.4. Fim de nome de propriedades
+### 8.2.4. Fim de nome de propriedades
 
 Usar um espaço após os dois pontos que procede o nome de uma propriedade.
 
@@ -600,7 +691,7 @@ h3 {
 }
 ```
 
-### 4.2.5. Separação do bloco de declaração
+### 8.2.5. Separação do bloco de declaração
 
 Usar um espaço entre os último seletor e o bloco de declaração.
 
@@ -626,7 +717,7 @@ Sempre usar um único espaço entre o último seletor e a chave de abertura do b
 }
 ```
 
-### 4.2.6. Seletor e separação da declaração
+### 8.2.6. Seletor e separação da declaração
 
 Separar seletores e declarações por uma nova linha.
 
@@ -649,7 +740,7 @@ h3 {
 }
 ```
 
-### 4.2.7. Separação de regras
+### 8.2.7. Separação de regras
 
 Separar regras de declaração por uma nova linha.
 
@@ -666,7 +757,7 @@ body {
 }
 ```
 
-### 4.2.8. Uso de aspas no CSS
+### 8.2.8. Uso de aspas no CSS
 
 Usar aspas simples para seletores de atributos e valor de propriedades.
 
@@ -690,9 +781,9 @@ html {
 }
 ```
 
-### 4.3. Regras de meta dados do CSS
+### 8.3. Regras de meta dados do CSS
 
-### 4.3.1. Comentários da seção
+### 8.3.1. Comentários da seção
 
 Agrupar seções por um comentário de seção.
 
