@@ -1,8 +1,13 @@
-# Styleguide
+# Guideline
 
-Guia de estilos da equipe de front-end da A2ad, onde definimos como escrevemos nosso querido código.
+[![Release](https://img.shields.io/badge/release-v1.0.0-blue.svg?style=flat-square)]()
+[![License](https://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat-square)]()
+[![Made with love](https://img.shields.io/badge/made%20with-%E2%99%A5-red.svg?style=flat-square)]()
+[![A2ad](https://img.shields.io/badge/A2-ad-orange.svg?style=flat-square)](a2ad.com.br)
 
-## 1. Background
+⚡️ Guia de orientação de estilo de escrita de código da equipe de front-end da A2ad.
+
+## 1. Motivação
 
 Este documento define a formatação e regras de estilo para HTML e CSS. Seu objetivo é melhorar a colaboração, qualidade de código, manutenção e transparência no processo de desenvolvimento.
 
