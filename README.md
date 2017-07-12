@@ -9,7 +9,7 @@
 
 ## 1. Motivação
 
-Este documento define a formatação e regras de estilo para HTML e CSS. Seu objetivo é melhorar a colaboração, qualidade de código, manutenção e transparência no processo de desenvolvimento.
+Este documento define a formatação e regras de estilo para HTML e CSS, bem como algumas boas práticas de desenvolvimento. Seu objetivo é melhorar a colaboração, qualidade de código, manutenção e transparência no processo de desenvolvimento.
 
 ## 2. Git
 
