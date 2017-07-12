@@ -262,7 +262,7 @@ Embora compatível com o HTML, não fechar elementos vazios.
 
 ### 7.1.2. Validação de HTML
 
-Usar HTML válidos sempre que possível.
+Usar HTML válido sempre que possível.
 
 Usar código HTML válido, a menos que isso não seja possível devido a objetivos de desempenho.
 
@@ -314,7 +314,7 @@ Fornecer conteúdos alternativos para multimídia.
 
 Para conteúdos multimídia, como imagens, vídeos, objetos animados com canvas, certificar-se de oferecer alternativas de acesso. Para imagens isso significa usar *alternative text* ```(alt)``` e para vídeos, transcrição de áudios e legendas, caso disponível.
 
-Prover conteúdos alternativo é importante por questões de acessibilidade: um usuário cego possui poucas chances de saber sobre o que é uma imagem sem o atríbuto ```alt```, e outros usuários podem não ter como entender conteúdos de vídeos e áudio caso não exista um fallback.
+Prover conteúdos alternativo é importante por questões de acessibilidade: um usuário cego possui poucas chances de saber sobre o que é uma imagem sem o atributo ```alt```, e outros usuários podem não ter como entender conteúdos de vídeos e áudio caso não exista um fallback.
 
 (Para imagens cujo atributo ```alt``` possa apresentar redundância ou imagens cujo propósito seja puramente decorativo, não usar texto alternativo, como ```alt=""```)
 
@@ -374,7 +374,7 @@ Separar estrutura da apresentação e do comportamento é importante por questõ
 
 Não omitir atríbutos *type* para estilos e scripts.
 
-O HTML5 assume o uso de ```text/css``` e ```text/javascript``` como padrão, portanto, seu uso não é mais necessário. Porém, para garantir e previsar incompatibilidades com browsers antigos, sempre usar o atríbuto.
+O HTML5 assume o uso de ```text/css``` e ```text/javascript``` como padrão, portanto, seu uso não é mais necessário. Porém, para garantir e previnir incompatibilidades com browsers antigos, sempre usar o atributo.
 
 ```html
 <!-- Não recomendado -->
@@ -497,7 +497,7 @@ O uso de nomes funcionais ou genéricos reduz a probabilidade de documentos desn
 
 ### 8.1.3. Estilo de nome de classes e IDs
 
-Usar nomes para classes e id's que sejam o mais curtos possível e tão longos quanto necessário.
+Usar nomes para classes e id's que sejam o mais curtos possíveis e tão longos quanto necessários.
 
 Tentar transmitir o que é a classe ou id, sendo tão breve quanto possível.
 
@@ -535,14 +535,21 @@ div.error {}
 .error {}
 ```
 
-### 8.1.5. Propriedades shorthand
+### 8.1.5. Propriedades *shorthand*
 
 Evitar usar propriedades *shorthand*.
 
 O CSS oferece uma variedade de propriedades *shorthand* (como ```font```) que podem ser usados. Porém, evitá-los é útil para aumentar a compreensão de todas as partes do código.
 
 ```css
-/* Não recomendado */
+/* Não recomenado */
+border-top: 0;
+font: 100%/1.6 palatino, georgia, serif;
+padding: 0 1em 2em;
+```
+
+```css
+/* Recomendado */
 border-top-style: none;
 font-family: palatino, georgia, serif;
 font-size: 100%;
@@ -551,13 +558,6 @@ padding-bottom: 2em;
 padding-left: 1em;
 padding-right: 1em;
 padding-top: 0;
-```
-
-```css
-/* Recomendado */
-border-top: 0;
-font: 100%/1.6 palatino, georgia, serif;
-padding: 0 1em 2em;
 ```
 
 ### 8.1.6. 0 e unidades
@@ -575,7 +575,7 @@ padding: 0;
 
 ### 8.1.7. Notação Hexadecimal
 
-Usar 3 caracteres da notação hexadecimais onde possível. 
+Usar 3 caracteres da notação hexadecimal onde possível. 
 
 Para valores de cores que permitem isso, 3 caracteres é curto e mais suscinto.
 
@@ -611,17 +611,17 @@ Separar palavras por um hífen em nome de ID's ou classes.
 
 Evite o uso de meios de detecção do agente do usuário, bem como a utilização de *Hacks* CSS - tente uma abordagem diferente antes.
 
-Ambas as abordagens devem ser consideradas em último recurso para alcançar e manter uma base de código eficiente e gerenciável. Usar detecção e hacks, é uma poderá prejudicar projetos a longo prazo
+Ambas as abordagens devem ser consideradas em último recurso para alcançar e manter uma base de código eficiente e gerenciável. Usar detecção e hacks poderá prejudicar projetos a longo prazo
 
 ### 8.2. Regras de formatação CSS
 
 ### 8.2.1. Ordem de declaração
 
-Declarações em orderm alfabética.
+Declarações em ordem alfabética.
 
 Colocar as declarações em ordem alfabética para conseguir um código consistente e de forma fácil de lembrar e manter.
 
-Ignorar os prefixos específicos para fins de ordenação. Porém, vários prefix para uma determinada propriedade CSS devem ser mantidos ordenadamente na order alfabética (exemplo: -moz vem antes de -webkit).
+Ignorar os prefixos específicos para fins de ordenação. Porém, vários prefix para uma determinada propriedade CSS devem ser mantidos ordenados alfabéticamente (exemplo: -moz vem antes de -webkit).
 
 ```css
 background: fuchsia;
@@ -649,7 +649,7 @@ Indentar todos os conteúdos de bloco, isto é, regras dentro das regras, bem co
 }
 ```
 
-### 8.2.3. Fim de declarações
+### 8.2.3. Fim da declarações
 
 Usar ponto e vírgula após cada declaração.
 
@@ -671,11 +671,11 @@ Terminar cada declaração com um ponto e vírgula por motivos de consistência 
 }
 ```
 
-### 8.2.4. Fim de nome de propriedades
+### 8.2.4. Fim do nome de propriedades
 
 Usar um espaço após os dois pontos que procede o nome de uma propriedade.
 
-Sempre usar um única espaço entre a própriedade e seu valor (mas não espaço entre a propriedade e os dois pontos) por motivos de consistência.
+Sempre usar um único espaço entre a propriedade e seu valor (mas não espaço entre a propriedade e os dois pontos) por motivos de consistência.
 
 ```css
 /* Não recomendado */
@@ -744,7 +744,7 @@ h3 {
 
 Separar regras de declaração por uma nova linha.
 
-Sempre colocar uma linha em branco (duas quebras de linhas) entre regras de declaração.
+Sempre colocar uma linha em branco (duas quebras de linhas) entre declaração de regras.
 
 ```css
 html {
