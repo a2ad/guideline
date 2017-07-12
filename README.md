@@ -660,3 +660,56 @@ body {
   width: 50%;
 }
 ```
+
+### 4.2.8. Uso de aspas no CSS
+
+Usar aspas simples para seletores de atributos e valor de propriedades.
+
+Usar aspas simples (```''```) em vez de aspas duplas (```""```) para seletores de atributos e valor de propriedades. Não usar aspas em valores de urls ( ```url()``` ).
+
+```css
+/* Não recomendado */
+@import url("https://www.google.com/css/maia.css");
+
+html {
+  font-family: "open sans", arial, sans-serif;
+}
+```
+
+```css
+/* Recomendado */
+@import url(https://www.google.com/css/maia.css);
+
+html {
+  font-family: 'open sans', arial, sans-serif;
+}
+```
+
+### 4.3. Regras de meta dados do CSS
+
+### 4.3.1. Comentários da seção
+
+Agrupar seções por um comentário de seção.
+
+```css
+/* Header */
+
+#adw-header {}
+
+/* Footer */
+
+#adw-footer {}
+
+/* Gallery */
+
+.adw-gallery {}
+```
+
+## Palavras finais
+
+Seja consistente.
+
+Se você estiver editando algum código, tire alguns minutos para observar o código ao seu redor e determinar o estilo do que você irá escrever de acordo com o que já está definido.
+
+O ponto de manter um guia de estilo é ter um vocabulário comum de codificação para que as pessoas possam se concentar no que você está dizendo e não em como você está dizendo. Se o código que você está escrevendo parece diferente do que já está implementado, reavalie a forma como você está conduzindo o desenvolvimento e apoisse em um padrão. Ao mesmo tempo, seja curioso para tentar entender porque certa decisão foi tomada e se há formas de otimizá-la.
+
