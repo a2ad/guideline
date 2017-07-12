@@ -39,7 +39,7 @@ Sempre fazer a sincronização com o repositório remoto antes de realizar um no
 
 ```git pull```
 
-Todos os commits devem ser escritos em português e devem descrever exatamente do que se trata a alteração. Caso as alterações envolva mais de uma feature/bug, separar por ponto e vígula as diferentes alterações.
+Todos os commits devem ser escritos em português e devem descrever exatamente do que se trata a alteração. Caso as alterações envolvam mais de uma feature/bug, separar por ponto e vígula as diferentes alterações.
 
 ```git commit -m "Adiciona galeria de imagens na homepage"```
 
@@ -55,7 +55,7 @@ Toda a documentação de projetos e configurações ficam hospedados na Wiki da 
 
 ## 4. Dependências
 
-Dar preferência ao usar do [Yarn](https://yarnpkg.com/pt-BR/) (uma versão otimizada do [npm](https://www.npmjs.com/)) como gerenciador de dependências.
+Dar preferência ao uso do [Yarn](https://yarnpkg.com/pt-BR/) (uma versão otimizada do [npm](https://www.npmjs.com/)) como gerenciador de dependências.
 
 Antes de usar um pacote de dependência, verifique o seu GitHub. Procure o número de issues abertos, downloads diários e número de contribuidores, bem como a data em que o pacote foi atualizado pela última vez.
 
