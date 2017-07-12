@@ -1,9 +1,9 @@
 # Guideline
 
-[![Release](https://img.shields.io/badge/release-v1.0.0-blue.svg?style=flat-square)]()
-[![License](https://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat-square)]()
-[![Made with love](https://img.shields.io/badge/made%20with-%E2%99%A5-red.svg?style=flat-square)]()
-[![A2ad](https://img.shields.io/badge/A2-ad-orange.svg?style=flat-square)](a2ad.com.br)
+[![Release](https://img.shields.io/badge/release-v1.0.0-blue.svg?style=flat-square)](https://github.com/a2ad/guideline)
+[![License](https://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat-square)](https://github.com/a2ad/guideline)
+[![Made with love](https://img.shields.io/badge/made%20with-%E2%99%A5-red.svg?style=flat-square)](https://github.com/a2ad/guideline)
+[![A2ad](https://img.shields.io/badge/A2-ad-orange.svg?style=flat-square)](http://a2ad.com.br)
 
 ⚡️ Guia de orientação de estilo de escrita de código da equipe de front-end da A2ad.
 
