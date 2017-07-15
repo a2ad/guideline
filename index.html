@@ -31,7 +31,7 @@
 		  				<summary>2. Git</summary>
 		  				<summary>2.1. .gitignore</summary>
 		  				<summary>2.2. <i>Branch</i></summary>
-		  				<summary>2.3. <i>Commit</i></summary>
+		  				<summary>2.3. <i><a href="#commit">Commit</a></i></summary>
 		  			</details>
 
 		  			<li>3. Documentações</li>
@@ -96,10 +96,109 @@
 		  			</details>
 		  			<li>Palavras finais</li>
 		  		</ul>
-		  	</section
-		  	>
+		  	</section>
 		  	<section class="content" itemscope itemtype="http://schema.org/WebPageElement">
 		  		<h2>⚡️ Guia de orientação de estilo de escrita de código da equipe de front-end da A2ad ⚡️</h2>
+		  		<div class="badges">
+			  		<a href="https://github.com/a2ad/guideline" title="Release version">
+			  			<img src="https://img.shields.io/badge/release-v1.0.0-blue.svg?style=flat-square" alt="Release Version">
+			  		</a>
+			  		<a href="https://github.com/a2ad/guideline" title="License">
+			  			<img src="https://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat-square" alt="License">
+			  		</a>
+			  		<a href="https://github.com/a2ad/guideline" title="Made with love">
+			  			<img src="https://img.shields.io/badge/made%20with-%E2%99%A5-red.svg?style=flat-square" alt="Made with love">
+			  		</a>
+			  		<a href="http://a2ad.com.br" title="A2ad">
+			  			<img src="https://img.shields.io/badge/A2-ad-orange.svg?style=flat-square" alt="A2ad">
+			  		</a>
+		  		</div>
+
+		  		<article class="article">
+		  			<h3>1. Motivação</h3>
+		  			<p>Este documento define a formatação e regras de estilo para HTML e CSS, bem como algumas boas práticas de desenvolvimento. Seu objetivo é melhorar a colaboração, qualidade de código, manutenção e transparência no processo de desenvolvimento.</p>
+		  		</article>
+
+		  		<article class="article">
+		  			<h3>2. Git</h3>
+		  		</article>
+
+		  		<article class="sub-article">
+		  			<h3>2.1. .gitignore</h3>
+		  			<p>Usar este arquivo <a title="Arquivo .gitignore" href="https://github.com/a2ad/guideline/blob/master/.gitignore">.gitignore</a>.</p>
+
+					<p>Caso esteja desenvolvendo algum projeto que não utilize o <a title="Snack framework" href="https://github.com/snack/snack-wp">Snack</a>, adicionar este arquivo .gitignore na raiz do projeto. Ele já possui uma lista de arquivos do sistema que não devem ser enviados com o seu código para o repositório remoto.</p>
+
+					<p>Além disso, exclui a configuração de pastas e arquivos para editores mais utilizados, bem como as pastas de dependência mais comuns.</p>
+		  		</article>
+
+		  		<article class="sub-article">
+		  			<h3>2.2. Branch</h3>
+		  			<p>Trabalhamos com dois branchs: <code class="code">master</code> e <code class="code">develop</code>.</p>
+
+					<p>Ao iniciar o desenvolvimento em um projeto, sempre fazer checkout para a branch develop.</p>
+
+					<p><code class="code">git checkout develop</code></p>
+
+					<p>Caso a branch ainda não exista, ela deverá ser criada.</p>
+
+					<p>Nunca comitar na branch <code class="code">master</code>.</p>
+		  		</article>
+
+		  		<article class="sub-article">
+		  			<h3 id="commit">2.3. Commit</h3>
+		  			<p>Sempre fazer a sincronização com o repositório remoto antes de realizar um novo commit. Isso evita potenciais conflitos de versão.</p>
+
+		  			<p><code class="code">git pull</code></p>
+
+		  			<p>Todos os commits devem ser escritos em português e devem descrever exatamente do que se trata a alteração. Caso as alterações envolvam mais de uma feature/bug, separar por ponto e vígula as diferentes alterações.</p>
+
+		  			<p><code class="code">git commit -m "Adiciona galeria de imagens na homepage"</code></p>
+
+		  			<p><code class="code">git commit -m "Corrige bug que fazia o formulário de busca no menu principal não abrir; Ajustes de CSS no box de notícias lateral"</code></p>
+
+		  			<p><strong>De preferência sempre fazer um commit por feature/bug.</strong></p>
+
+		  			<p>Mais sobre escrever bons commits em: <a href="https://chris.beams.io/posts/git-commit/#seven-rules" title="How to Write a Git Commit Message">How to Write a Git Commit Message</a>.</p>
+		  		</article>
+
+		  		<article class="article">
+		  			<h3>3. Documentações</h3>
+		  			<p>Toda a documentação de projetos e configurações ficam hospedados na Wiki da A2ad. Em caso de dúvidas, entrar em contato com algum responsável dentro da equipe de Design e Tecnologia.</p>
+		  		</article>
+
+		  		<article class="article">
+		  			<h3>4. Dependências</h3>
+		  			<p>Dar preferência ao uso do <a href="https://yarnpkg.com/pt-BR/">Yarn</a> (uma versão otimizada do <a href="https://www.npmjs.com/">npm</a>) como gerenciador de dependências.</p>
+
+		  			<p>Antes de usar um pacote de dependência, verifique o seu GitHub. Procure o número de issues abertos, downloads diários e número de contribuidores, bem como a data em que o pacote foi atualizado pela última vez.</p>
+
+		  			<ul class="article-lists">
+		  				<li>Se for necessária uma dependência menos conhecida, discuta com a equipe antes de usá-la.</li>
+		  				<li>Acompanhe os pacotes atualmente disponíveis e mantenha-os atualizados.</li>
+		  				<li>Veja se algum dos seus pacotes se tornou inutilizado ou irrelevante.
+		  					<ul class="article-sub-lists">
+		  						<li>É um risco potencial importar bibliotecas não utilizadas ou depreciadas e enviá-las para produção.</li>
+		  					</ul>
+		  				</li>
+		  				<li>Verifique as estatísticas de download para ver se a dependência é muito usada pela comunidade.
+		  					<ul class="article-sub-lists">
+		  						<li>Mais uso significa principalmente mais contribuidores, o que geralmente significa melhor manutenção, o que resulta em bugs sendo descobertos e corrigidos de maneira mais rápida.</li>
+		  					</ul>
+		  				</li>
+		  				<li>Certifique-se sempre de que a aplicação funciona com as últimas versões de dependências sem quebrar.</li>
+		  				<li>Verifique se o pacote possui vulnerabilidades de segurança conhecidas.</li>
+		  			</ul>
+		  		</article>
+
+		  		<article class="sub-article">
+		  			<h3>4.1. Consistência de dependências</h3>
+		  			<p>Certifique-se de que os membros da sua equipe tenha exatamente as mesmas dependências que você.</p>
+
+		  			<ul class="article-lists">
+		  				<li>O código deve se comportar como esperado e idêntico em qualquer máquina de desenvolvimento.</li>
+		  			</ul>
+		  		</article>
 		  	</section>
 		</div>
 	</main>

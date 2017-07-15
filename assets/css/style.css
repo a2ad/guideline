@@ -51,7 +51,6 @@
 /*Summary*/
 
 .summary {
-	/*background-color: pink;*/
 	border-right: 1px solid #ccc;
 	list-style: none;
 	padding-bottom: 50px;
@@ -59,12 +58,9 @@
 	padding-right: 20px;
 	padding-top: 30px;
 	width: 230px;
-	min-height: 530px;
+	height: 100%;
 }
 
-.summary > li {
-	/*font-weight: 700;*/
-}
 
 li {
 	padding: 5px;
@@ -77,6 +73,11 @@ summary {
 	padding: 5px;
 }
 
+summary a {
+	text-decoration: none;
+	color: #000;
+}
+
 summary:first-child {
 	font-weight: 700;
 }
@@ -85,15 +86,11 @@ summary:not(:first-child) {
 	margin-left: 20px;
 }
 
-.sub-sub-summary {
-	margin-left: 20px;
-}
-
 /*Content*/
 
 .content {
 	margin: 0 auto;
-	max-width: 1150px;
+	max-width: 950px;
 	padding-top: 50px;
 	padding-right: 25px;
 	padding-left: 25px;
@@ -103,4 +100,60 @@ h2 {
 	font-size: 1.3rem;
 	font-weight: 400;
 	text-align: center;
+}
+
+.badges {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin: 0 auto;
+	margin-top: 30px;
+	max-width: 528px;
+}
+
+.badges > a {
+	text-decoration: none;
+}
+
+/*Articles*/
+
+.article {
+	margin-top: 50px;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 10px;
+}
+
+.sub-article {
+	margin-top: 20px;
+}
+
+.article p,
+.sub-article p {
+	line-height: 25px;
+	margin-top: 15px;
+}
+
+.article a,
+.sub-article a {
+	color: #0366d6;
+	text-decoration: none;
+}
+
+.code {
+	font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+	padding: 0.2em;
+	border-radius: 3px;
+	background-color: rgba(27,31,35,0.05);
+	font-size: 14px;
+}
+
+.article-lists,
+.article-sub-lists {
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+.article-lists li,
+.article-sub-lists li {
+	font-size: 16px;
 }
