@@ -169,6 +169,8 @@
 
 		  		<article class="article">
 		  			<h3>4. Dependências</h3>
+		  		</article>
+		  		<article class="sub-article">
 		  			<p>Dar preferência ao uso do <a href="https://yarnpkg.com/pt-BR/">Yarn</a> (uma versão otimizada do <a href="https://www.npmjs.com/">npm</a>) como gerenciador de dependências.</p>
 
 		  			<p>Antes de usar um pacote de dependência, verifique o seu GitHub. Procure o número de issues abertos, downloads diários e número de contribuidores, bem como a data em que o pacote foi atualizado pela última vez.</p>
@@ -190,7 +192,6 @@
 		  				<li>Verifique se o pacote possui vulnerabilidades de segurança conhecidas.</li>
 		  			</ul>
 		  		</article>
-
 		  		<article class="sub-article">
 		  			<h3>4.1. Consistência de dependências</h3>
 		  			<p>Certifique-se de que os membros da sua equipe tenha exatamente as mesmas dependências que você.</p>
@@ -198,6 +199,134 @@
 		  			<ul class="article-lists">
 		  				<li>O código deve se comportar como esperado e idêntico em qualquer máquina de desenvolvimento.</li>
 		  			</ul>
+		  		</article>
+
+		  		<article class="article">
+		  			<h3>5. Estrutura de pastas</h3>
+		  		</article>
+		  		<article class="sub-article">
+		  			<p>Se possível, utilizar a seguinte estrutura de organização de pastas:</p>
+		  			<p>
+		  				<img src="assets/img/estrutura-de-pastas.png" alt="Estrutura de pastas proposta">
+		  			</p>
+		  		</article>
+
+		  		<article class="article">
+		  			<h3>6. Geral</h3>
+		  		</article>
+
+		  		<article class="sub-article">
+		  			<h3>6.1. Regras gerais de estilo</h3>
+		  		</article>
+
+		  		<article class="sub-article">
+		  			<h3>6.1.1. Protocolo</h3>
+		  			<p>Usar sempre que possível o protocolo HTTPS para recursos incorporados. Sempre usar o protocolo HTTPS (https:) para imagens e outros arquivos de mídia, folhas de estilo, fontes externas, apis e scripts, a menos que os respectivos arquivos não estejam disponíveis em HTTPS.</p>
+
+		  			<p><script src="https://gist.github.com/JulianoPadilha/c1b71c3da27fd279792e44e4047fbc15.js"></script><p>
+		  		</article>
+
+		  		<article class="sub-article">
+		  			<h3>6.2. Regras gerais de formatação</h3>
+		  		</article>
+
+		  		<article class="sub-article">
+		  			<h3>6.2.1. Indentação</h3>
+		  			<p>Indentar utilizando tab uma única vez.</p>
+
+		  			<p>Não usar espaços ou outros tipos de espaçamentos para indentação.</p>
+
+		  			<p><script src="https://gist.github.com/JulianoPadilha/56ca6ee74cc2f2b45d25ce62d64bb200.js"></script></p>
+
+		  			<p><script src="https://gist.github.com/JulianoPadilha/ae9f61db55367c085c6da57c4a7e0cac.js"></script></p>
+		  		</article>
+
+		  		<article  class="sub-article">
+		  			<h3>6.2.2. Capitalização</h3>
+		  			<p>Usar apenas lowercase.</p>
+
+		  			<p>Todo o código tem que ser em lowercase. Isto se aplica para nome de elementos HTML, atributos, valores de atributos, seletores CSS, propriedades e valores de propriedades (com exceção de strings).</p>
+
+		  			<p><script src="https://gist.github.com/JulianoPadilha/7a3895969a033051c5116dd4b0413132.js"></script></p>
+		  		</article>
+
+		  		<article class="sub-article">
+		  			<h3>6.2.3. Espaço em branco à direita</h3>
+		  			<p>Remover espaços em branco à direita.</p>
+
+					<p>Espaços em branco à direita são desnecessários e podem complicar diffs.</p>
+
+					<p><script src="https://gist.github.com/JulianoPadilha/f31f5db2549b2bacbdf6f582d01d3765.js"></script></p>
+		  		</article>
+
+		  		<article class="sub-article">
+		  			<h3>6.3. Regras gerais de Meta Dados</h3>
+		  		</article>
+
+		  		<article class="sub-article">
+		  			<h3>6.3.1. Encoding</h3>
+		  			<p>Usar UTF-8.</p>
+
+		  			<p>Certificar-se de que o editor de texto escolhido use UTF-8 como encoding de caracteres.</p>
+
+		  			<p>Especifique o encoding nos templates HTML e documentos via <code class="code">&lt;meta charset="utf-8"&gt;</code>. Não especifique o encoding de folhas de estilos, pois elas já assumem o uso de UTF-8.</p>
+
+		  			<p>Mais sobre encoding e quando e como especificar eles pode ser encontrado <a href="https://www.w3.org/International/tutorials/tutorial-char-enc/" title="Tutorial encoding">aqui</a>.</p>
+		  		</article>
+
+		  		<article class="sub-article">
+		  			<h3>6.3.2. Comentários</h3>
+		  			<p>Explique o código conforme necessário e sempre que possível.</p>
+
+		  			<p>Use comentários para explicar o código. O que ele faz? Para o que serve? Por que a respectiva solução é usada e/ou foi escolhida?</p>
+
+		  			<p>Ser objetivo nos comentários e não pecar por falta de explicação.</p>
+		  		</article>
+
+		  		<article class="sub-article">
+		  			<h3>6.3.3. Itens de ação</h3>
+
+		  			<p>Marcar <i>todos</i> e itens de ação com <code class="code">TODO</code>.</p>
+
+		  			<p>Realçar <i>todos</i> usando a palavra reservado <code class="code">TODO</code>.</p>
+
+		  			<p>Acrescentar um contato (username ou e-mail) em parênteses como o formato <code class="code">TODO(contact)</code>.</p>
+
+		  			<p>Acrescentar itens de ação depois de dois-pontos como <code class="code">TODO: item de ação</code></p>
+
+		  			<p><script src="https://gist.github.com/JulianoPadilha/8f2f07d9fc365abd13467e615a7ed6a3.js"></script></p>
+		  		</article>
+
+		  		<article class="article">
+		  			<h3>7. HTML</h3>
+		  		</article>
+
+		  		<article class="sub-article">
+		  			<h3>7.1. Regras de estilo HTML</h3>
+		  		</article>
+
+		  		<article class="sub-article">
+		  			<h3>7.1.1. Tipo de documento</h3>
+		  			<p>Usar HTML5.</p>
+
+		  			<p>HTML5 (sintaxe HTML) é preferível para todos os documentos HTML: <code class="code">&lt;!DOCTYPE html&gt;</code></p>
+
+		  			<p>Embora compatível com o HTML, não fechar elementos vazios.</p>
+
+		  			<p><script src="https://gist.github.com/JulianoPadilha/400ac1e41350f231b54fc879f487c97c.js"></script></p>
+		  		</article>
+
+		  		<article class="sub-article">
+		  			<h3>7.1.2. Validação de HTML</h3>
+		  			<p>Usar HTML válido sempre que possível.</p>
+
+		  			<p>Usar código HTML válido, a menos que isso não seja possível devido a objetivos de desempenho.</p>
+
+		  			<p>Usar ferramentas como <a href="https://validator.w3.org/nu/" title="W3C HTML validator">W3C HTML validator</a> para testes.</p>
+
+		  			<p>O uso de HTML válido é um atributo de qualidade e uma base mensurável que contribui para o aprendizado sobre a especificação do HTML e restrições técnicas que garante o seu uso correto.</p>
+
+		  			<p><script src="https://gist.github.com/JulianoPadilha/f98adb028b98a0b8b4dd036243f4948c.js"></script></p>
 		  		</article>
 		  	</section>
 		</div>
