@@ -4,9 +4,45 @@
 	<title>A2ad | Guideline</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+	<link rel="icon" href="assets/img/favicon.ico">
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<!-- General markup -->
+	<meta name="description" content="Guia de orientação de estilo de escrita de código da equipe de desenvolvimento web da A2ad">
+	<meta name="author" content="A2ad">
+	<link rel="base" href="https://a2ad.github.io/guideline/">
+	<link rel="canonical" href="https://a2ad.github.io/guideline/">
+	<meta rel="sitemap" type="application/xml" href="">
+	<meta name="robots" content="index/follow">
+	<meta name="googlebot" content="index/follow">
+	<meta name="theme-color" content="#ffff00">
+	<meta name="msapplication-navbutton-color" content="#ffff00">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#ffff00">
+
+	<!-- Schema.org markup for Google+ -->
+	<meta itemprop="name" content="A2ad guideline">
+	<meta itemprop="description" content="Guia de orientação de estilo de escrita de código da equipe de desenvolvimento web da A2ad">
+	<meta itemprop="image" content="https://a2ad.github.io/guideline/assets/img/logo-a2ad.svg">
+
+	<!-- Markup for Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="A2ad guideline">
+	<meta property="og:url" content="https://a2ad.github.io/guideline/">
+	<meta property="og:site_name" content="A2ad guideline">
+	<meta property="og:image" content="https://a2ad.github.io/guideline/assets/img/logo-a2ad.svg">
+	<meta property="og:description" content="Guia de orientação de estilo de escrita de código da equipe de desenvolvimento web da A2ad">
+	<meta property="og:locale" content="pt_BR">
+	<meta property="fb:app_id" content="384593848366233">
+	<meta property="fb:admins" content="100003036613503">
+
+	<!-- Markup for Twitter -->
+	<meta name="twitter:card" content="Summary">
+	<meta name="twitter:title" content="A2ad guideline">
+	<meta name="twitter:description" content="Guia de orientação de estilo de escrita de código da equipe de desenvolvimento web da A2ad">
+	<meta name="twitter:creator" content="A2ad">
+	<meta name="twitter:image" content="https://a2ad.github.io/guideline/assets/img/logo-a2ad.svg">
 	<!-- Vue.js -->
 	<!-- <script src="https://unpkg.com/vue@2.3.4"></script> -->
 </head>
@@ -45,60 +81,60 @@
 		  			<details>
 		  				<summary>6. <a href="#geral">Geral</a></summary>
 		  				<summary>6.1. <a href="#regras-gerais-de-estilo">Regras gerais de estilo</a></summary>
-			  			<summary>6.1.1. <a href="#protocolo">Protocolo</a></summary>
+			  			<summary>6.1.1. <a href="#protocolos">Protocolos</a></summary>
 			  			<summary>6.2. <a href="#regras-gerais-de-formatacao">Regras gerais de formatação</a></summary>
 						<summary>6.2.1. <a href="#indentacao">Indentação</a></summary>
 						<summary>6.2.2. <a href="#capitalizacao">Capitalização</a></summary>
 						<summary>6.2.3. <a href="#espaco-em-branco-a-direita">Espaço em branco à direita</a></summary>
-			  			<summary>6.3. <a href="regras-gerais-de-meta-dados">Regras gerais de meta dados</a></summary>
-			  			<summary>6.3.1. <a href="encoding">Encoding</a></summary>
-		  				<summary>6.3.2. <a href="comentarios">Comentários</a></summary>
-		  				<summary>6.3.3. <a href="itens-de-acao">Itens de ação</a></summary>
+			  			<summary>6.3. <a href="#regras-gerais-de-meta-dados">Regras gerais de meta dados</a></summary>
+			  			<summary>6.3.1. <a href="#encoding">Encoding</a></summary>
+		  				<summary>6.3.2. <a href="#comentarios">Comentários</a></summary>
+		  				<summary>6.3.3. <a href="#itens-de-acao">Itens de ação</a></summary>
 		  			</details>
 
 		  			<details>
 		  				<summary>7. <a href="#html">HTML</a></summary>
-		  				<summary>7.1. <a href="regras-gerais-de-estilo-html">Regras de estilo HTML</a></summary>
-		  				<summary>7.1.1. <a href="tipo-de-documento">Tipo de documento</a></summary>
-		  				<summary>7.1.2. <a href="validacao-de-html">Validação de HTML</a></summary>
-		  				<summary>7.1.3. <a href="semantica">Semântica</a></summary>
-		  				<summary>7.1.4. <i><a href="multimedia-fallback">Multimedia Fallback</a></i></summary>
-		  				<summary>7.1.5. <i><a href="separation-of-concerns">Separation of Concerns</a></i></summary>
-		  				<summary>7.1.6. <a href="atributos-type">Atributos<i> type</i></a></summary>
-			  			<summary>7.2. <a href="regras-de-formatacao-html">Regras de formatação HTML</a></summary>
-			  			<summary>7.2.1. <a href="regras-gerais-de-formatacao-html">Regras gerais de formatação</a></summary>
-		  				<summary>7.2.2. <a href="uso-de-aspas-no-html">Uso de aspas no HTML</a></summary>
+		  				<summary>7.1. <a href="#regras-gerais-de-estilo-html">Regras de estilo HTML</a></summary>
+		  				<summary>7.1.1. <a href="#tipo-de-documento">Tipo de documento</a></summary>
+		  				<summary>7.1.2. <a href="#validacao-de-html">Validação de HTML</a></summary>
+		  				<summary>7.1.3. <a href="#semantica">Semântica</a></summary>
+		  				<summary>7.1.4. <i><a href="#multimedia-fallback">Multimedia Fallback</a></i></summary>
+		  				<summary>7.1.5. <i><a href="#separation-of-concerns">Separation of Concerns</a></i></summary>
+		  				<summary>7.1.6. <a href="#atributos-type">Atributos<i> type</i></a></summary>
+			  			<summary>7.2. <a href="#regras-de-formatacao-html">Regras de formatação HTML</a></summary>
+			  			<summary>7.2.1. <a href="#regras-gerais-de-formatacao-html">Regras gerais de formatação</a></summary>
+		  				<summary>7.2.2. <a href="#uso-de-aspas-no-html">Uso de aspas no HTML</a></summary>
 		  			</details>
 		  			
 		  			<details>
-		  				<summary>8. <a href="css">CSS</a></summary>
-		  				<summary>8.1. <a href="regras-gerais-de-estilo-css">Regras de estilo CSS</a></summary>
-		  				<summary>8.1.1. <a href="validacao-de-css">Validação de CSS</a></summary>
-		  				<summary>8.1.2. <a href="nome-de-classes-e-ids">Nome de classes e IDs</a></summary>
-						<summary>8.1.3. <a href="estilo-de-nome-de-classes-e-ids">Estilo de nome de classes e IDs</a></summary>
-						<summary>8.1.4. <a href="seletores-de-tipos">Seletores de tipos</a></summary>
-						<summary>8.1.5. <a href="propriedades-shorthand">Propriedades <i>shorthand</i></a></summary>
-						<summary>8.1.6. <a href="zero-e-unidades">0 e unidades</a></summary>
-						<summary>8.1.7. <a href="notacao-hexadecimal">Notação hexadecimal</a></summary>
-						<summary>8.1.8. <a href="delimitadores-de-classes-e-ids">Delimitadores de nomes de classes e IDs</a></summary>
-						<summary>8.1.9. <a href="hacks"><i>Hacks</i></a></summary>
-			  			<summary>8.2. <a href="regras-de-formatacao-css">Regras de formatação CSS</a></summary>
-		  				<summary>8.2.1. <a href="ordem-de-declaracao">Ordem de declaração</a></summary>
-		  				<summary>8.2.2. <a href="indentacao-de-conteudos-de-blocos">Indentação de conteúdos de bloco</a></summary>
-		  				<summary>8.2.3. <a href="fim-de-declaracoes">Fim de declarações</a></summary>
-		  				<summary>8.2.4. <a href="fim-do-nome-de-propriedades">Fim do nome de propriedades</a></summary>
-		  				<summary>8.2.5. <a href="separacao-do-bloco-de-declaracao">Separação do bloco de declaração</a></summary>
-		  				<summary>8.2.6. <a href="seletor-e-separacao-da-declaracao">Seletor e separação da declaração</a></summary>
-		  				<summary>8.2.7. <a href="separacao-de-regras">Separação de regras</a></summary>
-		  				<summary>8.2.8. <a href="uso-de-aspas-no-css">Uso de aspas no CSS</a></summary>
-			  			<summary>8.3. <a href="regras-de-meta-dados-no-css">Regras de meta dados no CSS</a></summary>
-		  				<summary>8.3.1. <a href="comentarios-da-secao">Comentários da seção</a></summary>
+		  				<summary>8. <a href="#css">CSS</a></summary>
+		  				<summary>8.1. <a href="#regras-gerais-de-estilo-css">Regras de estilo CSS</a></summary>
+		  				<summary>8.1.1. <a href="#validacao-de-css">Validação de CSS</a></summary>
+		  				<summary>8.1.2. <a href="#nome-de-classes-e-ids">Nome de classes e IDs</a></summary>
+						<summary>8.1.3. <a href="#estilo-de-nome-de-classes-e-ids">Estilo de nome de classes e IDs</a></summary>
+						<summary>8.1.4. <a href="#seletores-de-tipos">Seletores de tipos</a></summary>
+						<summary>8.1.5. <a href="#propriedades-shorthand">Propriedades <i>shorthand</i></a></summary>
+						<summary>8.1.6. <a href="#zero-e-unidades">0 e unidades</a></summary>
+						<summary>8.1.7. <a href="#notacao-hexadecimal">Notação hexadecimal</a></summary>
+						<summary>8.1.8. <a href="#delimitadores-de-classes-e-ids">Delimitadores de nomes de classes e IDs</a></summary>
+						<summary>8.1.9. <a href="#hacks"><i>Hacks</i></a></summary>
+			  			<summary>8.2. <a href="#regras-de-formatacao-css">Regras de formatação CSS</a></summary>
+		  				<summary>8.2.1. <a href="#ordem-de-declaracao">Ordem de declaração</a></summary>
+		  				<summary>8.2.2. <a href="#indentacao-de-conteudos-de-blocos">Indentação de conteúdos de bloco</a></summary>
+		  				<summary>8.2.3. <a href="#fim-de-declaracoes">Fim de declarações</a></summary>
+		  				<summary>8.2.4. <a href="#fim-do-nome-de-propriedades">Fim do nome de propriedades</a></summary>
+		  				<summary>8.2.5. <a href="#separacao-do-bloco-de-declaracao">Separação do bloco de declaração</a></summary>
+		  				<summary>8.2.6. <a href="#seletor-e-separacao-da-declaracao">Seletor e separação da declaração</a></summary>
+		  				<summary>8.2.7. <a href="#separacao-de-regras">Separação de regras</a></summary>
+		  				<summary>8.2.8. <a href="#uso-de-aspas-no-css">Uso de aspas no CSS</a></summary>
+			  			<summary>8.3. <a href="#regras-de-meta-dados-no-css">Regras de meta dados no CSS</a></summary>
+		  				<summary>8.3.1. <a href="#comentarios-da-secao">Comentários da seção</a></summary>
 		  			</details>
-		  			<li><a href="palavras-finais">Palavras finais</a></li>
+		  			<li><a href="#palavras-finais">Palavras finais</a></li>
 		  		</ul>
 		  	</section>
 		  	<section class="content" itemscope itemtype="http://schema.org/WebPageElement">
-		  		<h2>⚡️ Guia de orientação de estilo de escrita de código da equipe de front-end da A2ad ⚡️</h2>
+		  		<h2>Guia de orientação de estilo de escrita de código da equipe de front-end da A2ad</h2>
 		  		<div class="badges">
 			  		<a href="https://github.com/a2ad/guideline" title="Release version">
 			  			<img src="https://img.shields.io/badge/release-v1.0.0-blue.svg?style=flat-square" alt="Release Version">
@@ -115,16 +151,16 @@
 		  		</div>
 
 		  		<article class="article">
-		  			<h3>1. Motivação</h3>
+		  			<h3 id="motivacao">1. Motivação</h3>
 		  			<p>Este documento define a formatação e regras de estilo para HTML e CSS, bem como algumas boas práticas de desenvolvimento. Seu objetivo é melhorar a colaboração, qualidade de código, manutenção e transparência no processo de desenvolvimento.</p>
 		  		</article>
 
 		  		<article class="article">
-		  			<h3>2. Git</h3>
+		  			<h3 id="git">2. Git</h3>
 		  		</article>
 
 		  		<article class="sub-article">
-		  			<h3>2.1. .gitignore</h3>
+		  			<h3 id="gitignore">2.1. .gitignore</h3>
 		  			<p>Usar este arquivo <a title="Arquivo .gitignore" href="https://github.com/a2ad/guideline/blob/master/.gitignore">.gitignore</a>.</p>
 
 					<p>Caso esteja desenvolvendo algum projeto que não utilize o <a title="Snack framework" href="https://github.com/snack/snack-wp">Snack</a>, adicionar este arquivo .gitignore na raiz do projeto. Ele já possui uma lista de arquivos do sistema que não devem ser enviados com o seu código para o repositório remoto.</p>
@@ -133,7 +169,7 @@
 		  		</article>
 
 		  		<article class="sub-article">
-		  			<h3>2.2. Branch</h3>
+		  			<h3 id="branch">2.2. Branch</h3>
 		  			<p>Trabalhamos com dois branchs: <code class="code">master</code> e <code class="code">develop</code>.</p>
 
 					<p>Ao iniciar o desenvolvimento em um projeto, sempre fazer checkout para a branch develop.</p>
@@ -163,12 +199,12 @@
 		  		</article>
 
 		  		<article class="article">
-		  			<h3>3. Documentações</h3>
+		  			<h3 id="documentacoes">3. Documentações</h3>
 		  			<p>Toda a documentação de projetos e configurações ficam hospedados na Wiki da A2ad. Em caso de dúvidas, entrar em contato com algum responsável dentro da equipe de Design e Tecnologia.</p>
 		  		</article>
 
 		  		<article class="article">
-		  			<h3>4. Dependências</h3>
+		  			<h3 id="dependencias">4. Dependências</h3>
 		  		</article>
 		  		<article class="sub-article">
 		  			<p>Dar preferência ao uso do <a href="https://yarnpkg.com/pt-BR/">Yarn</a> (uma versão otimizada do <a href="https://www.npmjs.com/">npm</a>) como gerenciador de dependências.</p>
@@ -193,7 +229,7 @@
 		  			</ul>
 		  		</article>
 		  		<article class="sub-article">
-		  			<h3>4.1. Consistência de dependências</h3>
+		  			<h3 id="consistencia-de-dependencias">4.1. Consistência de dependências</h3>
 		  			<p>Certifique-se de que os membros da sua equipe tenha exatamente as mesmas dependências que você.</p>
 
 		  			<ul class="article-lists">
@@ -202,7 +238,7 @@
 		  		</article>
 
 		  		<article class="article">
-		  			<h3>5. Estrutura de pastas</h3>
+		  			<h3 id="estrutura-de-pastas">5. Estrutura de pastas</h3>
 		  		</article>
 		  		<article class="sub-article">
 		  			<p>Se possível, utilizar a seguinte estrutura de organização de pastas:</p>
@@ -212,26 +248,26 @@
 		  		</article>
 
 		  		<article class="article">
-		  			<h3>6. Geral</h3>
+		  			<h3 id="geral">6. Geral</h3>
 		  		</article>
 
 		  		<article class="sub-article">
-		  			<h3>6.1. Regras gerais de estilo</h3>
+		  			<h3 id="regras-gerais-de-estilo">6.1. Regras gerais de estilo</h3>
 		  		</article>
 
 		  		<article class="sub-article">
-		  			<h3>6.1.1. Protocolo</h3>
+		  			<h3 id="protocolos">6.1.1. Protocolos</h3>
 		  			<p>Usar sempre que possível o protocolo HTTPS para recursos incorporados. Sempre usar o protocolo HTTPS (https:) para imagens e outros arquivos de mídia, folhas de estilo, fontes externas, apis e scripts, a menos que os respectivos arquivos não estejam disponíveis em HTTPS.</p>
 
 		  			<p><script src="https://gist.github.com/JulianoPadilha/c1b71c3da27fd279792e44e4047fbc15.js"></script><p>
 		  		</article>
 
 		  		<article class="sub-article">
-		  			<h3>6.2. Regras gerais de formatação</h3>
+		  			<h3 id="regras-gerais-de-formatacao">6.2. Regras gerais de formatação</h3>
 		  		</article>
 
 		  		<article class="sub-article">
-		  			<h3>6.2.1. Indentação</h3>
+		  			<h3 id="indentacao">6.2.1. Indentação</h3>
 		  			<p>Indentar utilizando tab uma única vez.</p>
 
 		  			<p>Não usar espaços ou outros tipos de espaçamentos para indentação.</p>
@@ -242,7 +278,7 @@
 		  		</article>
 
 		  		<article  class="sub-article">
-		  			<h3>6.2.2. Capitalização</h3>
+		  			<h3 id="capitalizacao">6.2.2. Capitalização</h3>
 		  			<p>Usar apenas lowercase.</p>
 
 		  			<p>Todo o código tem que ser em lowercase. Isto se aplica para nome de elementos HTML, atributos, valores de atributos, seletores CSS, propriedades e valores de propriedades (com exceção de strings).</p>
@@ -251,7 +287,7 @@
 		  		</article>
 
 		  		<article class="sub-article">
-		  			<h3>6.2.3. Espaço em branco à direita</h3>
+		  			<h3 id="espaco-em-branco-a-direita">6.2.3. Espaço em branco à direita</h3>
 		  			<p>Remover espaços em branco à direita.</p>
 
 					<p>Espaços em branco à direita são desnecessários e podem complicar diffs.</p>
@@ -260,11 +296,11 @@
 		  		</article>
 
 		  		<article class="sub-article">
-		  			<h3>6.3. Regras gerais de Meta Dados</h3>
+		  			<h3 id="regras-gerais-de-meta-dados">6.3. Regras gerais de Meta Dados</h3>
 		  		</article>
 
 		  		<article class="sub-article">
-		  			<h3>6.3.1. Encoding</h3>
+		  			<h3 id="encoding">6.3.1. Encoding</h3>
 		  			<p>Usar UTF-8.</p>
 
 		  			<p>Certificar-se de que o editor de texto escolhido use UTF-8 como encoding de caracteres.</p>
@@ -275,7 +311,7 @@
 		  		</article>
 
 		  		<article class="sub-article">
-		  			<h3>6.3.2. Comentários</h3>
+		  			<h3 id="comentarios">6.3.2. Comentários</h3>
 		  			<p>Explique o código conforme necessário e sempre que possível.</p>
 
 		  			<p>Use comentários para explicar o código. O que ele faz? Para o que serve? Por que a respectiva solução é usada e/ou foi escolhida?</p>
@@ -284,7 +320,7 @@
 		  		</article>
 
 		  		<article class="sub-article">
-		  			<h3>6.3.3. Itens de ação</h3>
+		  			<h3 id="itens-de-acao">6.3.3. Itens de ação</h3>
 
 		  			<p>Marcar <i>todos</i> e itens de ação com <code class="code">TODO</code>.</p>
 
@@ -302,11 +338,11 @@
 		  		</article>
 
 		  		<article class="sub-article">
-		  			<h3>7.1. Regras de estilo HTML</h3>
+		  			<h3 id="regras-gerais-de-estilo-html">7.1. Regras de estilo HTML</h3>
 		  		</article>
 
 		  		<article class="sub-article">
-		  			<h3>7.1.1. Tipo de documento</h3>
+		  			<h3 id="tipo-de-documento">7.1.1. Tipo de documento</h3>
 		  			<p>Usar HTML5.</p>
 
 		  			<p>HTML5 (sintaxe HTML) é preferível para todos os documentos HTML: <code class="code">&lt;!DOCTYPE html&gt;</code></p>
@@ -317,7 +353,7 @@
 		  		</article>
 
 		  		<article class="sub-article">
-		  			<h3>7.1.2. Validação de HTML</h3>
+		  			<h3 id="validacao-de-html">7.1.2. Validação de HTML</h3>
 		  			<p>Usar HTML válido sempre que possível.</p>
 
 		  			<p>Usar código HTML válido, a menos que isso não seja possível devido a objetivos de desempenho.</p>
@@ -330,7 +366,7 @@
 		  		</article>
 
 		  		<article class="sub-article">
-		  			<h3>7.1.3. Semântica</h3>
+		  			<h3 id="semantica">7.1.3. Semântica</h3>
 		  			<p>Usar HTML de acordo com seu propósito.</p>
 
 		  			<p>Usar elementos/tags seguindo a especificação para a qual foram criados. Por exemplo, usar elementos de cabeçalho para cabeçalhos, <code class="code">p</code> para parágrafos e <code class="code">a</code> para âncoras, etc.</p>
@@ -341,7 +377,7 @@
 		  		</article>
 
 		  		<article class="sub-article">
-		  			<h3>7.1.4. Multimedia Fallback</h3>
+		  			<h3 id="multimedia-fallback">7.1.4. Multimedia Fallback</h3>
 		  			<p>Fornecer conteúdos alternativos para multimídia.</p>
 
 		  			<p>Para conteúdos multimídia, como imagens, vídeos, objetos animados com canvas, certificar-se de oferecer alternativas de acesso. Para imagens isso significa usar alternative text <code class="code">(alt)</code> e para vídeos, transcrição de áudios e legendas, caso disponível.</p>
@@ -354,7 +390,7 @@
 		  		</article>
 
 		  		<article class="sub-article">
-		  			<h3>7.1.5. Separação de interesse/preocupação (<i>Separation of Concerns</i>)</h3>
+		  			<h3 id="separation-of-concerns">7.1.5. Separação de interesse/preocupação (<i>Separation of Concerns</i>)</h3>
 		  			<p>Separar estrutura(HTML) da apresentação(CSS) e do comportamento(JavaScript).</p>
 
 		  			<p>Manter estritamente estrutura (marcação), apresentação (estilo) e comportamento (script) separados e buscar manter a interação entre os três o mínimo possível.</p>
@@ -367,7 +403,7 @@
 		  		</article>
 
 		  		<article class="sub-article">
-		  			<h3>7.1.6. Atributos <i>type</i></h3>
+		  			<h3 id="atributos-type">7.1.6. Atributos <i>type</i></h3>
 		  			<p>Não omitir atributos <i>type</i> para estilos e scripts.</p>
 
 		  			<p>O HTML5 assume o uso de <code class="code">text/css</code> e <code class="code">text/javascript</code> como padrão, portanto, seu uso não é mais necessário. Porém, para garantir e previnir incompatibilidades com browsers antigos, sempre usar o atributo.</p>
@@ -376,11 +412,11 @@
 		  		</article>
 
 		  		<article class="sub-article">
-		  			<h3>7.2. Regras de formatação HTML</h3>
+		  			<h3 id="regras-de-formatacao-html">7.2. Regras de formatação HTML</h3>
 		  		</article>
 
 		  		<article class="sub-article">
-		  			<h3>7.2.1. Regras gerais de formatação</h3>
+		  			<h3 id="regras-gerais-de-formatacao-html">7.2.1. Regras gerais de formatação</h3>
 		  			<p>Usar uma nova linha para cada bloco, lista ou elemento de tabela, e indentar cada elemento filho.</p>
 
 		  			<p>Independentemente do estilo do elemento (como CSS permite que elementos assumam diferentes estilos com a propriedade <code class="code">display</code>), colocar todos os blocos, listas e elementos de tabela em uma nova linha.</p>
@@ -391,7 +427,7 @@
 		  		</article>
 
 		  		<article class="sub-article">
-		  			<h3>7.2.2. Uso de aspas no HTML</h3>
+		  			<h3 id="uso-de-aspas-no-html">7.2.2. Uso de aspas no HTML</h3>
 		  			<p>Quando adicionar citações em valores de atributos, usar aspas duplas.</p>
 
 		  			<p>Usar aspas duplas <code class="code">("")</code> em vez de apas simples <code class="code">('')</code> em valores de atributos.</p>
@@ -400,15 +436,15 @@
 		  		</article>
 
 		  		<article class="article">
-		  			<h3>8. CSS</h3>
+		  			<h3 id="css">8. CSS</h3>
 		  		</article>
 
 		  		<article class="sub-article">
-		  			<h3>8.1. Regras de estilo CSS</h3>
+		  			<h3 id="regras-gerais-de-estilo-css">8.1. Regras de estilo CSS</h3>
 		  		</article>
 
 		  		<article class="sub-article">
-		  			<h3>8.1.1. Validação de CSS</h3>
+		  			<h3 id="validacao-de-css">8.1.1. Validação de CSS</h3>
 		  			<p>Usar CSS válido sempre que possível.</p>
 
 		  			<p>A menos que esteja lidando com bugs do validador de CSS ou sintaxe proprietárias, usar código CSS válido.</p>
@@ -419,7 +455,7 @@
 		  		</article>
 
 		  		<article class="sub-article">
-		  			<h3>8.1.2. Nome de classes e IDs</h3>
+		  			<h3 id="nome-de-classes-e-ids">8.1.2. Nome de classes e IDs</h3>
 		  			<p>Usar nomes significativos para classes e IDs.</p>
 
 		  			<p>Usar sempre nomes que refletem a finalidade do elemento em questão, ou que sejam genéricos.</p>
@@ -434,7 +470,7 @@
 		  		</article>
 
 		  		<article class="sub-article">
-		  			<h3>8.1.3. Estilo de nome de classes e IDs</h3>
+		  			<h3 id="estilo-de-nome-de-classes-e-ids">8.1.3. Estilo de nome de classes e IDs</h3>
 		  			<p>Usar nomes para classes e id's que sejam o mais curtos possíveis e tão longos quanto necessários.</p>
 
 		  			<p>Tentar transmitir o que é a classe ou id, sendo tão breve quanto possível.</p>
@@ -445,7 +481,7 @@
 		  		</article>
 
 		  		<article class="sub-article">
-		  			<h3>8.1.4. Seletores de tipo <i>(Type Selectors)</i></h3>
+		  			<h3 id="seletores-de-tipos">8.1.4. Seletores de tipo <i>(Type Selectors)</i></h3>
 		  			<p>Evitar qualificar id's e classes com seletores de tipos.</p>
 
 		  			<p>A menos que seja necessário (por exemplo, com classes helpers), não usar nomes de elementos em conjunto com id's e classes.</p>
@@ -456,7 +492,7 @@
 		  		</article>
 
 		  		<article class="sub-article">
-		  			<h3>8.1.5. Propriedades <i>shorthand</i></h3>
+		  			<h3 id="propriedades-shorthand">8.1.5. Propriedades <i>shorthand</i></h3>
 		  			<p>Evitar usar propriedades shorthand.</p>
 
 		  			<p>O CSS oferece uma variedade de propriedades shorthand (como <code class="code">font</code>) que podem ser usados. Porém, evitá-los é útil para aumentar a compreensão de todas as partes do código.</p>
@@ -465,7 +501,7 @@
 		  		</article>
 
 		  		<article class="sub-article">
-		  			<h3>8.1.6. 0 e unidades</h3>
+		  			<h3 id="zero-e-unidades">8.1.6. 0 e unidades</h3>
 		  			<p>Omitir especificação de unidade após valores "0", a menos que seja requerido.</p>
 
 		  			<p>Não usar unidades após valores <code class="code">0</code> a menos que seja obrigatório.</p>
@@ -474,7 +510,7 @@
 		  		</article>
 
 		  		<article class="sub-article">
-		  			<h3>8.1.7. Notação Hexadecimal</h3>
+		  			<h3 id="notacao-hexadecimal">8.1.7. Notação Hexadecimal</h3>
 		  			<p>Usar 3 caracteres da notação hexadecimal onde possível.</p>
 
 		  			<p>Para valores de cores que permitem isso, 3 caracteres é curto e mais suscinto.</p>
@@ -483,25 +519,25 @@
 		  		</article>
 
 		  		<article class="sub-article">
-		  			<h3>8.1.8. Delimitadores de nomes de classes e id's</h3>
+		  			<h3 id="delimitadores-de-classes-e-ids">8.1.8. Delimitadores de nomes de classes e id's</h3>
 		  			<p>Separar palavras por um hífen em nome de ID's ou classes.</p>
 
 		  			<p><script src="https://gist.github.com/JulianoPadilha/2db88c509d340fd413332b48249bfae6.js"></script></p>
 		  		</article>
 
 		  		<article class="sub-article">
-		  			<h3>8.1.9. <i>Hacks</i></h3>
+		  			<h3 id="hacks">8.1.9. <i>Hacks</i></h3>
 		  			<p>Evite o uso de meios de detecção do agente do usuário, bem como a utilização de Hacks CSS - tente uma abordagem diferente antes.</p>
 
 		  			<p>Ambas as abordagens devem ser consideradas em último recurso para alcançar e manter uma base de código eficiente e gerenciável. Usar detecção e hacks poderá prejudicar projetos a longo prazo.</p>
 		  		</article>
 
 		  		<article class="sub-article">
-		  			<h3>8.2. Regras de formatação CSS</h3>
+		  			<h3 id="regras-de-formatacao-css">8.2. Regras de formatação CSS</h3>
 		  		</article>
 
 		  		<article class="sub-article">
-		  			<h3>8.2.1. Ordem de declaração</h3>
+		  			<h3 id="ordem-de-declaracao">8.2.1. Ordem de declaração</h3>
 		  			<p>Declarações em ordem alfabética.</p>
 
 		  			<p>Colocar as declarações em ordem alfabética para conseguir um código consistente e de forma fácil de lembrar e manter.</p>
@@ -512,14 +548,14 @@
 		  		</article>
 
 		  		<article class="sub-article">
-		  			<h3>8.2.2. Indentação de conteúdos de bloco</h3>
+		  			<h3 id="indentacao-de-conteudos-de-blocos">8.2.2. Indentação de conteúdos de bloco</h3>
 		  			<p>Indentar todos os conteúdos de bloco, isto é, regras dentro das regras, bem como declarações, para refletir a hierarquia e melhorar a compreensão.</p>
 
 		  			<p><script src="https://gist.github.com/JulianoPadilha/ad62737ce49c07e546bc62ce1b0b93c4.js"></script></p>
 		  		</article>
 
 		  		<article class="sub-article">
-		  			<h3>8.2.3. Fim da declarações</h3>
+		  			<h3 id="fim-de-declaracoes">8.2.3. Fim da declarações</h3>
 		  			<p>Usar ponto e vírgula após cada declaração.</p>
 
 		  			<p>Terminar cada declaração com um ponto e vírgula por motivos de consistência e extensibilidade.</p>
@@ -528,7 +564,7 @@
 		  		</article>
 
 		  		<article class="sub-article">
-		  			<h3>8.2.4. Fim do nome de propriedades</h3>
+		  			<h3 id="fim-do-nome-de-propriedades">8.2.4. Fim do nome de propriedades</h3>
 		  			<p>Usar um espaço após os dois pontos que procede o nome de uma propriedade.</p>
 
 		  			<p>Sempre usar um único espaço entre a propriedade e seu valor (mas não espaço entre a propriedade e os dois pontos) por motivos de consistência.</p>
@@ -537,7 +573,7 @@
 		  		</article>
 
 		  		<article class="sub-article">
-		  			<h3>8.2.5. Separação do bloco de declaração</h3>
+		  			<h3 id="separacao-do-bloco-de-declaracao">8.2.5. Separação do bloco de declaração</h3>
 		  			<p>Usar um espaço entre os último seletor e o bloco de declaração.</p>
 
 		  			<p>Sempre usar um único espaço entre o último seletor e a chave de abertura do bloco de declaração.</p>
@@ -546,7 +582,7 @@
 		  		</article>
 
 		  		<article class="sub-article">
-		  			<h3>8.2.6. Seletor e separação da declaração</h3>
+		  			<h3 id="seletor-e-separacao-da-declaracao">8.2.6. Seletor e separação da declaração</h3>
 		  			<p>Separar seletores e declarações por uma nova linha.</p>
 
 		  			<p>Sempre começar uma nova linha para seletores e declarações.</p>
@@ -555,7 +591,7 @@
 		  		</article>
 
 		  		<article class="sub-article">
-		  			<h3>8.2.7. Separação de regras</h3>
+		  			<h3 id="separacao-de-regras">8.2.7. Separação de regras</h3>
 		  			<p>Separar regras de declaração por uma nova linha.</p>
 
 		  			<p>Sempre colocar uma linha em branco (duas quebras de linhas) entre declaração de regras.</p>
@@ -564,7 +600,7 @@
 		  		</article>
 
 		  		<article class="sub-article">
-		  			<h3>8.2.8. Uso de aspas no CSS</h3>
+		  			<h3 id="uso-de-aspas-no-css">8.2.8. Uso de aspas no CSS</h3>
 		  			<p>Usar aspas simples para seletores de atributos e valor de propriedades.</p>
 
 		  			<p>Usar aspas simples (<code class="code">''</code>) em vez de aspas duplas (<code class="code">""</code>) para seletores de atributos e valor de propriedades. Não usar aspas em valores de urls ( <code class="code">url()</code> ).</p>
@@ -573,18 +609,18 @@
 		  		</article>
 
 		  		<article class="sub-article">
-		  			<h3>8.3. Regras de meta dados do CSS</h3>
+		  			<h3 id="regras-de-meta-dados-no-css">8.3. Regras de meta dados do CSS</h3>
 		  		</article>
 
 		  		<article class="sub-article">
-		  			<h3>8.3.1. Comentários da seção</h3>
+		  			<h3 id="comentarios-da-secao">8.3.1. Comentários da seção</h3>
 		  			<p>Agrupar seções por um comentário de seção.</p>
 
 		  			<p><script src="https://gist.github.com/JulianoPadilha/7b41df9afd633c9c6747fa586000c870.js"></script></p>
 		  		</article>
 
 		  		<article class="article">
-		  			<h3>Palavras finais</h3>
+		  			<h3 id="palavras-finais">Palavras finais</h3>
 		  		</article>
 
 		  		<article class="sub-article">
