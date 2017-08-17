@@ -1,18 +1,19 @@
 * {
-	box-sizing: border-box;
-	font-family: 'Roboto', sans-serif;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	font-family: "Roboto", sans-serif;
 	margin: 0;
 	padding: 0;
 }
 
 .fork {
 	position: fixed;
-    top: 0;
-    right: -15px;
-    z-index: 4;
-    width: 149px;
-    height: 149px;
-    background: url(../img/fork-me.png) no-repeat -15px top;
+	top: 0;
+	right: -15px;
+	z-index: 4;
+	width: 149px;
+	height: 149px;
+	background: url(../img/fork-me.png) no-repeat -15px top;
 }
 
 @media screen and (max-width: 600px) {
@@ -24,7 +25,9 @@
 /*Main*/
 
 .main-container {
-	display: grid;
+	display: -ms-grid;
+	display:     grid;
+	-ms-grid-columns: 100%;
 	grid-template-columns: 100%;
 	/*grid-template-rows: 100px;*/
 	grid-template-areas: "header";
@@ -35,11 +38,13 @@
 .header-container {
 	background-color: #fffd00;
 	-webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
-    box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+	        box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
 }
 
 .header {
 	grid-area: header;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	margin: 0 auto;
 	max-width: 1100px;
@@ -48,12 +53,15 @@
 .header-logo {
 	padding: 10px;
 	flex-basis: 41%;
+	-ms-flex-preferred-size: 41%;
 }
 
 .header-title {
+	-ms-flex-item-align: center;
+	-ms-grid-row-align: center;
 	align-self: center;
 	border-bottom: 5px solid #ff8111;
-	color: #333;
+	color: #333333;
 	font-size: 2.5rem;
 	text-transform: uppercase;
 }
@@ -61,13 +69,15 @@
 /*Wrapper*/
 
 .wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
 /*Summary*/
 
 .summary {
-	border-right: 1px solid #ccc;
+	border-right: 1px solid #cccccc;
 	list-style: none;
 	padding-bottom: 50px;
 	padding-left: 30px;
@@ -93,7 +103,7 @@ summary {
 .summary li a,
 summary a {
 	text-decoration: none;
-	color: #000;
+	color: #000000;
 }
 
 summary:first-child {
@@ -121,8 +131,12 @@ h2 {
 }
 
 .badges {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-ms-flex-pack: distribute;
 	justify-content: space-around;
 	margin: 0 auto;
 	margin-top: 30px;
@@ -137,7 +151,7 @@ h2 {
 
 .article {
 	margin-top: 50px;
-	border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid #dddddd;
 	padding-bottom: 10px;
 }
 
@@ -180,7 +194,7 @@ h2 {
 
 .footer {
 	background-color: #2e2e2e;
-	color: #fff;
+	color: #ffffff;
 	width: 100%;
 	margin-top: 50px;
 	padding-bottom: 10px;
