@@ -252,12 +252,12 @@ Embora compatível com o HTML, não fechar elementos vazios.
 
 ```html
 <!--Não recomendado-->
-<br/>
+<input/>
 ```
 
 ```html
 <!--Recomendado-->
-<br>
+<input>
 ```
 
 ### 7.1.2. Validação de HTML
@@ -539,7 +539,7 @@ div.error {}
 
 Evitar usar propriedades *shorthand*.
 
-O CSS oferece uma variedade de propriedades *shorthand* (como ```font```) que podem ser usados. Porém, evitá-los é útil para aumentar a compreensão de todas as partes do código.
+O CSS oferece uma variedade de propriedades *shorthand* (como ```padding```) que podem ser usados. Porém, evitá-los é útil para aumentar a compreensão de todas as partes do código.
 
 ```css
 /* Não recomenado */
@@ -560,6 +560,13 @@ padding-right: 1em;
 padding-top: 0;
 ```
 
+Outros cenários onde o uso de shorthand é recomendado. 
+```css
+/* Recomendado */
+padding: 10px;
+margin: 10px 20px;
+```
+
 ### 8.1.6. 0 e unidades
 
 Omitir especificação de unidade após valores "0", a menos que seja requerido.
@@ -575,19 +582,18 @@ padding: 0;
 
 ### 8.1.7. Notação Hexadecimal
 
-Usar 3 caracteres da notação hexadecimal onde possível. 
-
-Para valores de cores que permitem isso, 3 caracteres é curto e mais suscinto.
+Usar 6 caracteres da notação hexadecimal.
 
 ```css
 /* Não recomendado */
-color: #eebbcc;
+color: #ebc;
 ```
 
 ```css
 /* Recomendado */
-color: #ebc;
+color: #eebbcc;
 ```
+
 
 ### 8.1.8. Delimitadores de nomes de classes e id's
 
@@ -748,7 +754,7 @@ Sempre colocar uma linha em branco (duas quebras de linhas) entre declaração d
 
 ```css
 html {
-  background: #fff;
+  background: #ffffff;
 }
 
 body {
@@ -759,26 +765,27 @@ body {
 
 ### 8.2.8. Uso de aspas no CSS
 
-Usar aspas simples para seletores de atributos e valor de propriedades.
+Usar aspas duas para seletores de atributos e valor de propriedades.
 
-Usar aspas simples (```''```) em vez de aspas duplas (```""```) para seletores de atributos e valor de propriedades. Não usar aspas em valores de urls ( ```url()``` ).
-
-```css
-/* Não recomendado */
-@import url("https://www.google.com/css/maia.css");
-
-html {
-  font-family: "open sans", arial, sans-serif;
-}
-```
+Usar aspas duplas (```""```) em vez de aspas simples (```''```) para seletores de atributos e valor de propriedades. Não usar aspas em valores de urls ( ```url()``` ).
 
 ```css
 /* Recomendado */
 @import url(https://www.google.com/css/maia.css);
 
 html {
+  font-family: "open sans', arial, sans-serif";
+}
+
+```css
+/* Não recomendado */
+@import url("https://www.google.com/css/maia.css");
+
+html {
   font-family: 'open sans', arial, sans-serif;
 }
+```
+
 ```
 
 ### 8.3. Regras de meta dados do CSS
