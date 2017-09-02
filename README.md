@@ -17,7 +17,7 @@ Este documento define a formatação e regras de estilo para HTML e CSS, bem com
 
 Usar este arquivo [.gitignore](https://github.com/a2ad/guideline/blob/master/.gitignore).
 
-Caso esteja desenvolvendo algum projeto que não utilize o [Snack](https://github.com/snack/snack-wp), adicionar este arquivo .gitignore na raiz do projeto. Ele já possui uma lista de arquivos do sistema que não devem ser enviados com o seu código para o repositório remoto. 
+Caso esteja desenvolvendo algum projeto que não utilize o [Snack](https://github.com/snack/snack-wp), adicionar este arquivo .gitignore na raiz do projeto. Ele já possui uma lista de arquivos do sistema que não devem ser enviados com o seu código para o repositório remoto.
 
 Além disso, exclui a configuração de pastas e arquivos para editores mais utilizados, bem como as pastas de dependência mais comuns.
 
@@ -807,6 +807,21 @@ Agrupar seções por um comentário de seção.
 
 .adw-gallery {}
 ```
+
+## 9. Plugins para editor de texto
+
+Alguns editores de texto dão a possiblidade de utilizar plugins para as mais diversas finalidades. Fique à vontade para utilizar o editor de texto de sua preferência e integrar os plugins que melhor atendem suas necessidades.
+
+Abaixo tem uma lista dos plugins que recomendamos utilizar. Todos foram testado no Sublime Text, portanto, pode ser que não existam ou tenham outro nome dependendo do editor de texto utilizado.
+
+- Autoprefixer
+- AutoFileName
+- Bracket Highligther
+- Color Highligther
+- Emmet
+
+Referência de como utilizar o gerenciador de pacotes do Sublime:
+[Como instalar pacotes/plugins no Sublime Text](http://sublimetextdicas.com.br/instalacao-gerenciador-pacotes-sublime-text/)
 
 ## Palavras finais
 
